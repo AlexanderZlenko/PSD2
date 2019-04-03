@@ -1,0 +1,22 @@
+@import "_var.scss";
+
+.footer {
+  background-color: #595959;
+}
+
+.footer__text {
+  max-width: 75rem;
+  margin: 0 auto;
+  font-family: $ff;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5625rem 1rem;
+}
+
+.web-adress {
+  margin-top: 0.4rem;
+}

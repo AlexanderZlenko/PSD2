@@ -1,0 +1,268 @@
+@import "_var.scss";
+@import "_header.scss";
+@import "_nav.scss";
+@import "_slider";
+@import "_about-us.scss";
+@import "_most-visited.scss";
+@import "_our-advantages.scss";
+@import "_footer.scss";
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+html {
+  font-size: 100%;
+}
+
+body  {
+  margin: 0;
+  padding: 0;
+}
+
+$ff: Roboto, san-serif;
+
+@mixin text {
+  font: {
+    family: $ff;
+    size: 1rem;
+    weight: 300;
+  }
+  color: #000;
+  line-height: 1.375rem;
+}
+
+@mixin h1-text {
+  font: {
+    family: $ff;
+    size: 1.75rem;
+    weight: 400;
+  }
+  color: #000;
+}
+
+@mixin h2-text {
+  font: {
+    family: $ff;
+    size: 1.25rem;
+    weight: 700;
+  }
+  color: #000;
+}
+
+.container__row {
+  max-width: 100%;
+}
+
+.container__cell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.625rem;
+}
+
+@media screen and (max-width: 992px){
+  html {
+    font-size: 90%;
+  }
+
+  .description-text {
+    font-size: 90%;
+  }
+
+  .block__pic {
+    height: 7rem;
+  }
+
+  .pic__title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__btn {
+    display: block;
+  }
+
+  .main-nav__list {
+    display: none;
+  }
+
+  .main-nav {
+    padding: 0;
+  }
+
+  .btn-nav {
+    padding: 0.5rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .show {
+    display: block;
+  }
+
+  .main-nav__item {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .description-text {
+    font-size: 80%;
+  }
+
+  .block__pic {
+   background-size: 6rem;
+  }
+
+  .block__title {
+    font-size: 1rem;
+  }
+
+  .header__logo,
+  .header__contact {
+    width: 35%;
+  }
+
+  .logo__pic {
+    width: 100%;
+  }
+
+  .phone-number {
+    font-size: 1rem;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .header__logo,
+  .header__contact {
+    margin: 0 auto 1rem;
+  }
+
+  .phone-number {
+    margin-right: 0.9rem;
+  }
+
+  .header__email {
+    margin-right: 0.3rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .slider-dots__item {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .about-us__main-title {
+    margin: 2.5rem 0 1.5rem 0;
+  }
+
+  .about-us__text {
+    font-size: 1rem;
+  }
+
+  .about-us__text:last-child {
+    margin-bottom: 2rem;
+  }
+
+  .most-visited__main-title {
+    margin: 1rem 0 1rem 0;
+  }
+
+  .pic__title {
+    font-size: 1.8rem;
+  }
+
+  .about-us__main-title,
+  .most-visited__main-title {
+    font-size: 1.25rem;
+  }
+
+  .our-advantages__title {
+    font-size: 1.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .most-visited__grid {
+    margin: 1.8rem 0 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid__item {
+    margin-bottom: 0.3rem;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  .block__pic {
+    margin-top: 0.3rem;
+    background-size: 5rem;
+  }
+
+  .block__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .footer__text {
+    font-size: 0.8rem;
+  }
+
+  .our-advantages__description {
+    flex-direction: column;
+  }
+
+  .description__block {
+    margin: 0 auto -2.5rem;
+    width: 80%;
+  }
+
+  .block__pic {
+    background-size: 9rem;
+    height: 10rem;
+  }
+
+  .header__contact {
+    font-size: 1rem;
+    line-height: 0.7rem;
+  }
+
+  .phone-number {
+    margin-right: 1.2rem;
+  }
+
+  .email {
+    margin-right: 0.4rem;
+  }
+
+  .logo__pic{
+    margin-bottom: 0.3rem;
+  }
+
+}

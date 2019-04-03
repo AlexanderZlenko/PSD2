@@ -1,0 +1,180 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webcareer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="container__row">
+                <div class="container__cell">
+                    <div class="header">
+                        <div class="header__logo">
+                            <a href="#" class="logo">
+                                <img src="initial/logo.png" alt="logo" class="logo__pic">
+                            </a>
+                        </div>
+                        <div class="header__contact">
+                            <div class="header__phone-number">
+                                <a href="tel:+71234567890" class="phone-number">
+                                    + 7 (123) 456-78-90
+                                </a>
+                            </div>
+                            <div class="header__email">
+                                <a href="mailto:support@webcareer.ru" class="email">
+                                    support@webcareer.ru
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__row">
+                <div class="container__cell">
+                    <div class="nav__btn">
+                        <button class="btn-nav" id="trigger">
+                            <span class="btn-nav__line"></span>
+                            <span class="btn-nav__line"></span>
+                            <span class="btn-nav__line"></span>
+                        </button>
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list" id="main-nav">
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link">Главная</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link">О нас</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link">Новости</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link">Новинки</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link">Доставка</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="container__row">
+                <div class="slider">
+                    <div class="slider__item" style="background-image: url(initial/slider-pic1.png)"></div>
+                    <div class="slider__item" style="background-image: url(initial/slider-pic1.png)"></div>
+                    <div class="slider__item" style="background-image: url(initial/slider-pic1.png)"></div>
+                </div>
+                <div class="slider-dots">
+                    <span class="slider-dots__item" onclick="currentSlide(1)"></span>
+                    <span class="slider-dots__item" onclick="currentSlide(2)"></span>
+                    <span class="slider-dots__item" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
+            <section class="container__row">
+                <div class="container__cell">
+                    <div class="about-us">
+                        <h1 class="about-us__main-title title_center">О нас</h1>
+                        <p class="about-us__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
+                            печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                            образцов.
+                        </p>
+                        <p class="about-us__text">
+                            Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в
+                            электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами
+                            Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus
+                            PageMaker, в шаблонах которых используется Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="container__row">
+                <div class="container__cell">
+                    <div class="most-visited">
+                        <div class="most-visited__main-title title_center">Популярные разделы</div>
+                        <div class="most-visited__grid">
+                            <a href="#" class="grid__item">
+                                <img src="initial/iphone1.png" class="grid__item item-1">
+                                <span class="pic__title">Смартфоны</span>
+                            </a>
+                            <a href="#" class="grid__item">
+                                <img src="initial/mac1.png" class="grid__item item-1">
+                                <span class="pic__title">Ноутбуки</span>
+                            </a>
+                            <a href="#" class="grid__item">
+                                <img src="initial/mic1.png" class="grid__item item-1">
+                                <span class="pic__title">Микрофоны</span>
+                            </a>
+                            <a href="#" class="grid__item">
+                                <img src="initial/ps1.png" class="grid__item item-1">
+                                <span class="pic__title">Игровые приставки</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container__row">
+                <div class="container__cell">
+                    <article class="our-advantages">
+                        <div class="our-advantages__title title_center">Наши преимущества</div>
+                        <div class="our-advantages__description">
+                            <section class="description__block">
+                                <div class="block__pic" style="background-image: url(initial/email.png)"></div>
+                                <div class="block__title">Поддержка 24/7</div>
+                                <div class="block__text">
+                                    <p class="description-text">
+                                        Рыбным текстом называется текст, служащий для временного наполнения макета в
+                                        публикациях или производстве веб-сайтов, пока финальный текст еще не создан.
+                                    </p>
+                                </div>
+                            </section>
+                            <section class="description__block">
+                                <div class="block__pic" style="background-image: url(initial/pc.png)"></div>
+                                <div class="block__title">Удобный интерфейс</div>
+                                <div class="block__text">
+                                    <p class="description-text">
+                                        Рыбным текстом называется текст, служащий для временного наполнения макета в
+                                        публикациях или производстве веб-сайтов, пока финальный текст еще не создан.
+                                    </p>
+                                </div>
+                            </section>
+                            <section class="description__block">
+                                <div class="block__pic" style="background-image: url(initial/tools.png)"></div>
+                                <div class="block__title">Гибкая настройка</div>
+                                <div class="block__text">
+                                    <p class="description-text">
+                                        Рыбным текстом называется текст, служащий для временного наполнения макета в
+                                        публикациях или производстве веб-сайтов, пока финальный текст еще не создан.
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container__row">
+                <div class="footer">
+                    <div class="footer__text">
+                        <span class="all-rights-reserved">Александр Пауков &copy; 2017</span>
+                        <span class="web-adress">webcareer.ru</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

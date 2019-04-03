@@ -1,0 +1,13 @@
+@import "_var.scss";
+
+.about-us__main-title {
+  @include h1-text;
+  margin: 2.5rem 0;
+}
+
+.about-us__text {
+  @include text;
+  &:last-child {
+    margin-bottom: 2.6875rem;
+  }
+}

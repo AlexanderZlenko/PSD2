@@ -1,0 +1,40 @@
+@import '_var.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.125rem 0;
+  border-bottom: 1px solid #808080;
+}
+
+.header__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-number {
+  font-family: $ff;
+  font-weight: bold;
+  font-size: 1.5625rem;
+  color: #000;
+}
+
+.phone-number,
+.email {
+  text-decoration: none;
+}
+
+.header__email {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.email {
+  color: #808080;
+  font-family: $ff;
+  font-weight: 300;
+}
+
+.header__phone-number {
+  margin-bottom: 0.5625rem;
+}

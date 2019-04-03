@@ -1,0 +1,43 @@
+@import "_var.scss";
+
+.our-advantages__title {
+  @include h1-text;
+}
+
+.our-advantages__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__block {
+  width: 30%;
+  text-align: center;
+}
+
+.block__title {
+  font-family: $ff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.125rem;
+}
+
+.description-text {
+  @include text;
+}
+
+.block__pic {
+  height: 6.25rem;
+  background: {
+    position: center;
+    repeat: no-repeat;
+  };
+  margin-top: 2.1875rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.block__text {
+  margin-bottom: 5rem;
+}
